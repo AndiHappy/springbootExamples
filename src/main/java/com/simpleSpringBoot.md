@@ -1,5 +1,6 @@
-# Spring Boot
-1.一个简单的spring的应用，具体见: App.java 和 SimpleRestController
+## spring的简单的应用   
+
+### 1.一个简单的spring的应用，具体见: App.java 和 SimpleRestController
 
  @Controller so Spring will consider it when handling incoming web requests.     
  @RequestMapping annotation provides “routing” information. It is telling Spring that any HTTP request with the path “/” should be mapped to the home method.       
@@ -12,7 +13,7 @@ our application is the main method. This is just a standard method that follows 
 
 java启动类里面的main方法，可以用来启动整个工程。
 
-2.打包
+### 2.打包
 
 具体的maven的指令是：mvn package
 具体的说明可以参见：
@@ -20,13 +21,13 @@ http://docs.spring.io/spring-boot/docs/2.0.0.BUILD-SNAPSHOT/maven-plugin//usage.
 如果有多个的启动的类，可以指定启动类，版本号之类的变量
 
 
-3.依赖的管理    
+### 3.依赖的管理    
 我们选择的是maven依赖，   
 Sensible resource filtering for application.properties and application.yml including profile-specific files (e.g. application-foo.properties and application-foo.yml)     配置文件的名称已经确定了。
 
 spring-boot 提供了书写简单的依赖方案，例如如果想依赖redis，直接依赖：spring-boot-starter-redis
 
-4.推荐工程层次和包的结构    
+### 4.推荐工程层次和包的结构    
 
 ~~~
 com
@@ -46,6 +47,8 @@ com
 ~~~
 
 可以作为参考
+
+
 
 
 
